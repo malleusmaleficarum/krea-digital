@@ -19,7 +19,7 @@ const BlogHome = () => {
     >
       <div className={styles.header}>
         <h1 className={styles["page-title"]}>Blogs</h1>
-        <Link href='/'>View All</Link>
+        <Link href='/blogs'>View All</Link>
       </div>
 
       <div className={styles.wrapper}>
