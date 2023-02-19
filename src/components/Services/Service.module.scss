@@ -1,0 +1,153 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/mixin";
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+
+    .wrapper{
+        width: 100%;
+        display: flex;
+        margin-bottom:50px;
+        
+        .img{
+            width: 45%;
+            height: auto;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .rotate{
+            height: fit-content;
+            text-align: center;
+            color:$black;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 0.7rem;
+            line-height: 1.5rem;
+            text-transform: uppercase;
+            transform: rotate(-180deg);
+            writing-mode: vertical-rl;
+            opacity: .7;
+        }
+    
+        .detail-right{
+            width: 55%;
+            text-align: end;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap:25px;
+            
+            h2{
+                width: 80%;
+                font-size: 68px;
+                font-weight: 700;
+                color: $krea;
+                text-transform: capitalize;
+            }
+    
+            h3{
+                width: 80%;
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color:$black;
+            }
+    
+            p{
+                width: 80%;
+                font-size: 20px;
+                font-weight: 400;
+                text-transform: capitalize;
+                
+            }
+    
+            .button{
+                width: 60%;
+                padding: 14px 32px;
+                font-size: 20px;
+                letter-spacing: 0.2rem;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: transparent;
+                color: #0063f8;
+                border: 1px solid #0063f8;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    background-color:#0063f8 ;
+                    color: $white;
+                }
+            }
+        }
+    
+        .detail-left{
+            width: 55%;
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap:25px;
+            
+            h2{
+                width: 80%;
+                font-size: 68px;
+                font-weight: 700;
+                color: $krea;
+                text-transform: capitalize;
+            }
+    
+            h3{
+                width: 80%;
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color:$black;
+            }
+    
+            p{
+                width: 80%;
+                font-size: 20px;
+                font-weight: 400;
+                text-transform: capitalize;
+                
+            }
+    
+            .button{
+                width: 60%;
+                padding: 14px 32px;
+                font-size: 20px;
+                letter-spacing: 0.2rem;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: transparent;
+                color: #0063f8;
+                border: 1px solid #0063f8;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+    
+                &:hover{
+                    background-color:#0063f8 ;
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+
+    
+}

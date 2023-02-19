@@ -1,0 +1,101 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/mixin";
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:150px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .header{
+        width: 100%;
+        height: 150px;
+        margin-bottom:50px;
+        border-radius: 10px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/blog-bg.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .hero{
+            color:$white;
+            font-weight: 800;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+    }
+
+    .intro{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        .intro-title{
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 40px;
+            color:$krea;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .intro-body{
+            color:$black;
+            line-height: 25px;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    .services{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .service{
+            margin-bottom: 30px;
+            padding:30px;
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 5px;
+            -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.2);
+            -moz-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.2);
+            box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.1);
+
+            .img{
+                width: 100%;
+                height: 300px;
+                margin-bottom:30px;
+                img{
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+
+            .title{
+                font-size:2rem;
+                font-weight: 700;
+                color:$krea;
+            }
+
+            .body{
+                font-size: 15px;
+                letter-spacing: 0.1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}

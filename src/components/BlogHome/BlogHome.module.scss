@@ -1,0 +1,89 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/mixin";
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:150px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .header{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding:15px;
+        border-bottom: 1px solid $border-bottom;
+        margin-bottom: 50px;
+
+        .page-title{
+            font-size: 40px;
+            font-weight: 800;
+            color: $krea;
+            text-align: center;
+        }
+
+        a{
+            text-decoration: underline;
+        }
+    }
+
+    .wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .blog{
+            padding: 8px;
+            width: 32%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap:8px;
+            color:$black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.2);
+            -moz-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.2);
+            box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.1);
+
+            &:hover{
+                transform: scale(1.01);
+            }
+
+            img{
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            .title{
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .date{
+                font-size: 12px;
+                text-transform: capitalize;
+                font-style: italic;
+                color:#707070;
+            }
+
+            .body{
+                overflow: hidden;
+                color:#707070;
+                font-size: 16px;
+                line-height: 1.3rem;
+                display:-webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+    
+}

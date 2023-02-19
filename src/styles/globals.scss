@@ -1,0 +1,21 @@
+@import "base/variables";
+@import "base/reset";
+@import "base/typography";
+
+body {
+  background-color: $white;
+  overscroll-behavior: none;
+}
+
+h1{
+  font-size: $title;
+  font-weight: 600;
+  color:$black;
+  margin-bottom:8px;
+}
+
+p{
+  font-size: $text;
+  color:$black;
+}
+

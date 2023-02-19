@@ -1,0 +1,46 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/mixin";
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .title{
+        margin-top: 20px;
+        margin-bottom: 70px;
+        color:#0063FD;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.75rem;
+    }
+
+    .logo{
+       display: flex;
+       align-items: center;
+
+       @include device('medium'){
+        margin-bottom: 30px;
+       }
+
+        .image{
+            font-size: 30px;
+            font-weight: 700;
+            margin-right: 50px;
+
+            a{
+                color:inherit;
+            }
+        }
+
+        span{
+            height: 1px;
+            width: 50%;
+            background-color: $border-bottom;
+            display: inline-block;
+        }
+    }
+}
